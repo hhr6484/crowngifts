@@ -1,0 +1,1134 @@
+{
+  "products": [
+    {
+      "id": 1778307595189,
+      "name": "Fresh Tomato (Farm Fresh)",
+      "price": 40,
+      "comparePrice": 55,
+      "description": "Fresh farm-picked tomatoes with rich flavor, vibrant red color, and natural freshness. Perfect for cooking curries, salads, sauces, and daily kitchen use. Carefully selected to ensure quality, taste, and nutrition. Hygienically packed and delivered fresh to your doorstep.  \r\nFreshly harvested from farms\r\nRich in vitamins and antioxidants\r\nJuicy and naturally ripened\r\nIdeal for cooking and salads\r\nPremium quality handpicked vegetables\r\nHygienically cleaned and packed\r\nNo artificial coloring or chemicals\r\nFarm-to-home freshness",
+      "category": "Fruits",
+      "stock": 10,
+      "sku": "VEG-TOM-001",
+      "images": [
+        "/uploads/products/product-1778307595179-909198157.jpg",
+        "/uploads/products/product-1778307595180-797960776.jpg",
+        "/uploads/products/product-1778307595181-600477664.jpg",
+        "/uploads/products/product-1778307595183-573719117.jpg",
+        "/uploads/products/product-1778307595184-708417862.jpg"
+      ],
+      "isFeatured": true,
+      "isMostPopular": false,
+      "isJustArrived": true,
+      "brand": "Farm Fresh",
+      "weight": "2kg",
+      "unit": "kg",
+      "rating": 0,
+      "reviewCount": 0,
+      "createdAt": "2026-05-09T06:19:55.189Z",
+      "updatedAt": "2026-05-13T04:25:22.006Z",
+      "taxCategory": "all"
+    },
+    {
+      "id": 1778314966534,
+      "name": "Brokoli",
+      "price": 58,
+      "comparePrice": 68,
+      "description": "BrokoliBrokoliBrokoli",
+      "category": "Fruits",
+      "stock": 100,
+      "sku": "Brokoli",
+      "images": [
+        "/uploads/products/product-1778314966525-901446526.jpg",
+        "/uploads/products/product-1778314966528-193332362.jpg",
+        "/uploads/products/product-1778314966531-73453161.jpg",
+        "/uploads/products/product-1778314966532-681824273.jpg"
+      ],
+      "isFeatured": true,
+      "isMostPopular": true,
+      "isJustArrived": true,
+      "brand": "Brokoli",
+      "weight": "1kg",
+      "unit": "kg",
+      "rating": 0,
+      "reviewCount": 0,
+      "createdAt": "2026-05-09T08:22:46.534Z",
+      "updatedAt": "2026-05-11T09:48:40.278Z"
+    },
+    {
+      "id": 1778483057486,
+      "name": "iphone",
+      "price": 258,
+      "comparePrice": 200,
+      "description": "iphone iphone iphoneiphone  iphone iphone iphone iphone iphone iphone iphoneiphone",
+      "category": "Electronics",
+      "stock": 10,
+      "sku": "152",
+      "brand": "iphone",
+      "weight": "11",
+      "unit": "pcs",
+      "isFeatured": true,
+      "isMostPopular": false,
+      "isJustArrived": true,
+      "images": [
+        "/uploads/products/product-1778483057482-295425814.jpg",
+        "/uploads/products/product-1778483152762-838106904.jpg"
+      ],
+      "createdAt": "2026-05-11T07:04:17.486Z",
+      "updatedAt": "2026-05-11T09:36:21.350Z"
+    },
+    {
+      "id": 1778487390389,
+      "name": "Products",
+      "price": 9999,
+      "comparePrice": 199999,
+      "description": "Products Products ",
+      "category": "vegitables ",
+      "stock": 150,
+      "sku": "123",
+      "images": [
+        "/uploads/products/product-1778487390382-306050340.jpg",
+        "/uploads/products/product-1778487390383-632314946.jpg",
+        "/uploads/products/product-1778487390383-388761705.jpg",
+        "/uploads/products/product-1778487390383-102154117.jpg",
+        "/uploads/products/product-1778487390386-6105360.jpg"
+      ],
+      "brand": "",
+      "weight": "",
+      "unit": "pcs",
+      "isFeatured": true,
+      "isMostPopular": false,
+      "isJustArrived": true,
+      "createdAt": "2026-05-11T08:16:30.389Z",
+      "updatedAt": "2026-05-11T09:33:46.800Z"
+    },
+    {
+      "id": 1778488306395,
+      "name": "T shirt",
+      "price": 999,
+      "comparePrice": 1999,
+      "description": "Addidas Addidas ",
+      "category": "vegitables ",
+      "stock": 150,
+      "sku": "123",
+      "images": [
+        "/uploads/products/product-1778488306390-458630852.jpg",
+        "/uploads/products/product-1778488306390-892650552.jpg",
+        "/uploads/products/product-1778488306391-130050026.jpg",
+        "/uploads/products/product-1778488306391-520576746.jpg"
+      ],
+      "brand": "Addidas",
+      "weight": "",
+      "unit": "pcs",
+      "isFeatured": true,
+      "isMostPopular": true,
+      "isJustArrived": true,
+      "createdAt": "2026-05-11T08:31:46.395Z",
+      "updatedAt": "2026-05-11T09:16:20.579Z"
+    },
+    {
+      "id": 1778494584031,
+      "name": "Fruits",
+      "price": 999,
+      "comparePrice": 5999,
+      "description": "welcom welcom",
+      "category": "Electronics",
+      "stock": 150,
+      "sku": "12",
+      "images": [
+        "/uploads/products/product-1778494584026-896770861.jpg",
+        "/uploads/products/product-1778494584027-513299513.jpg",
+        "/uploads/products/product-1778494584028-969528391.jpg"
+      ],
+      "brand": "Apple",
+      "weight": "",
+      "unit": "pcs",
+      "isFeatured": true,
+      "isMostPopular": false,
+      "isJustArrived": false,
+      "createdAt": "2026-05-11T10:16:24.031Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1778307404397,
+      "name": "Electronics",
+      "description": "Fruits",
+      "image": "/uploads/categories/category-1778494522596-5386059.jpg",
+      "status": "active",
+      "parentCategory": "",
+      "order": 1,
+      "productCount": 2,
+      "createdAt": "2026-05-09T06:16:44.397Z",
+      "updatedAt": "2026-05-11T10:15:22.598Z"
+    }
+  ],
+  "banners": [
+    {
+      "id": 1778481846910,
+      "createdAt": "2026-05-11T06:44:06.910Z",
+      "updatedAt": "2026-05-11T09:25:26.560Z",
+      "title": "Banner",
+      "subtitle": "Banner",
+      "description": "Banner Banner Banner Banner Banner",
+      "buttonText": "Shop Now",
+      "buttonLink": "/products",
+      "badge": "HOT",
+      "active": true,
+      "order": 1,
+      "image": "/uploads/banners/banner-1778491526559-780555421.jpg"
+    },
+    {
+      "id": 1778501167827,
+      "title": "bANNER",
+      "subtitle": "bANNER",
+      "description": "bANNER bANNER bANNER bANNER ",
+      "buttonText": "Shop Now",
+      "buttonLink": "/shop",
+      "badge": "new",
+      "active": true,
+      "order": 1,
+      "image": "/uploads/banners/banner-1778501167826-202090808.jpg",
+      "createdAt": "2026-05-11T12:06:07.827Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-1778648259012",
+      "orderId": "ORD-1778648259012",
+      "customerName": "Hemanth",
+      "customerEmail": "hemanthraj6484@gmail.com",
+      "customerPhone": "08300110089",
+      "address": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE, brand monk acemady, COIMBATORE, Tamil Nadu - 641011",
+      "items": [
+        {
+          "id": 1778307595189,
+          "name": "Fresh Tomato (Farm Fresh)",
+          "quantity": 2,
+          "price": 40
+        },
+        {
+          "id": 1778314966534,
+          "name": "Brokoli",
+          "quantity": 2,
+          "price": 58
+        }
+      ],
+      "total": 314.6,
+      "subtotal": 196,
+      "shipping": 99,
+      "tax": 19.6,
+      "taxRate": 10,
+      "discount": 0,
+      "couponCode": null,
+      "paymentMethod": "paypal",
+      "paymentStatus": "paid",
+      "status": "pending",
+      "shippingAddress": {
+        "name": "Hemanth Raj",
+        "phone": "08300110089",
+        "addressLine1": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "addressLine2": "brand monk acemady",
+        "city": "COIMBATORE",
+        "state": "Tamil Nadu",
+        "pincode": "641011",
+        "landmark": "",
+        "type": "Home"
+      },
+      "shippingZone": {
+        "id": 1778499804795,
+        "name": "Local",
+        "description": "free shipinng",
+        "regions": "Delhi",
+        "countries": [],
+        "states": [],
+        "cities": [
+          "Mumbai"
+        ],
+        "pincodes": "641011",
+        "minOrderAmount": 1,
+        "shippingCost": 99,
+        "freeShippingAbove": 600,
+        "deliveryDays": "3-5",
+        "isActive": true,
+        "createdAt": "2026-05-11T11:43:24.795Z",
+        "updatedAt": "2026-05-11T11:43:31.248Z"
+      },
+      "createdAt": "2026-05-13T04:57:39.015Z",
+      "updatedAt": "2026-05-13T04:57:39.015Z"
+    },
+    {
+      "id": "ORD-1778647106885",
+      "orderId": "ORD-1778647106885",
+      "customerName": "Hemanth",
+      "customerEmail": "hemanthraj6484@gmail.com",
+      "customerPhone": "08300110089",
+      "address": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE, brand monk acemady, COIMBATORE, Tamil Nadu - 641011",
+      "items": [
+        {
+          "id": 1778488306395,
+          "name": "T shirt",
+          "quantity": 2,
+          "price": 999
+        }
+      ],
+      "total": 2296.8,
+      "subtotal": 1998,
+      "shipping": 99,
+      "tax": 199.8,
+      "taxRate": 10,
+      "discount": 0,
+      "couponCode": null,
+      "paymentMethod": "cod",
+      "paymentStatus": "pending",
+      "status": "pending",
+      "shippingAddress": {
+        "name": "Hemanth Raj",
+        "phone": "08300110089",
+        "addressLine1": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "addressLine2": "brand monk acemady",
+        "city": "COIMBATORE",
+        "state": "Tamil Nadu",
+        "pincode": "641011",
+        "landmark": "",
+        "type": "Home"
+      },
+      "shippingZone": null,
+      "createdAt": "2026-05-13T04:38:26.889Z",
+      "updatedAt": "2026-05-13T04:38:26.889Z"
+    },
+    {
+      "id": "ORD-1778646363560",
+      "orderId": "ORD-1778646363560",
+      "customerName": "Hemanth",
+      "customerEmail": "hemanthraj6484@gmail.com",
+      "customerPhone": "08300110089",
+      "address": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE, brand monk acemady, COIMBATORE, Tamil Nadu - 641011",
+      "items": [
+        {
+          "id": 1778307595189,
+          "name": "Fresh Tomato (Farm Fresh)",
+          "quantity": 1,
+          "price": 40
+        }
+      ],
+      "total": 143,
+      "subtotal": 40,
+      "shipping": 99,
+      "tax": 4,
+      "taxRate": 10,
+      "discount": 0,
+      "couponCode": null,
+      "paymentMethod": "cod",
+      "paymentStatus": "pending",
+      "status": "pending",
+      "shippingAddress": {
+        "name": "Hemanth Raj",
+        "phone": "08300110089",
+        "addressLine1": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "addressLine2": "brand monk acemady",
+        "city": "COIMBATORE",
+        "state": "Tamil Nadu",
+        "pincode": "641011",
+        "landmark": "",
+        "type": "Home"
+      },
+      "shippingZone": null,
+      "createdAt": "2026-05-13T04:26:03.566Z",
+      "updatedAt": "2026-05-13T04:26:03.566Z"
+    },
+    {
+      "id": "ORD-1778501505033",
+      "orderId": "ORD-1778501505033",
+      "customerName": "Hemanth",
+      "customerEmail": "hemanthraj6484@gmail.com",
+      "customerPhone": "08300110089",
+      "address": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE, brand monk acemady, COIMBATOReee, 641011 - RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+      "items": [
+        {
+          "id": 1778314966534,
+          "name": "Brokoli",
+          "quantity": 1,
+          "price": 58
+        },
+        {
+          "id": 1778483057486,
+          "name": "iphone",
+          "quantity": 1,
+          "price": 258
+        },
+        {
+          "id": 1778307595189,
+          "name": "Fresh Tomato (Farm Fresh)",
+          "quantity": 4,
+          "price": 40
+        },
+        {
+          "id": 1778488306395,
+          "name": "T shirt",
+          "quantity": 1,
+          "price": 999
+        },
+        {
+          "id": 1778494584031,
+          "name": "Fruits",
+          "quantity": 1,
+          "price": 999
+        }
+      ],
+      "total": 2621.4,
+      "subtotal": 2474,
+      "shipping": 0,
+      "tax": 247.4,
+      "taxRate": 10,
+      "discount": 100,
+      "couponCode": "J0UDS7L8",
+      "paymentMethod": "cod",
+      "paymentStatus": "pending",
+      "status": "pending",
+      "shippingAddress": {
+        "name": "Hemanth Raj",
+        "phone": "08300110089",
+        "addressLine1": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "addressLine2": "brand monk acemady",
+        "city": "COIMBATOReee",
+        "state": "641011",
+        "pincode": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "landmark": "",
+        "type": "Work"
+      },
+      "shippingZone": {
+        "id": 1778499804795,
+        "name": "Local",
+        "description": "free shipinng",
+        "regions": "Delhi",
+        "countries": [],
+        "states": [],
+        "cities": [
+          "Mumbai"
+        ],
+        "pincodes": "641011",
+        "minOrderAmount": 1,
+        "shippingCost": 99,
+        "freeShippingAbove": 600,
+        "deliveryDays": "3-5",
+        "isActive": true,
+        "createdAt": "2026-05-11T11:43:24.795Z",
+        "updatedAt": "2026-05-11T11:43:31.248Z"
+      },
+      "createdAt": "2026-05-11T12:11:45.037Z",
+      "updatedAt": "2026-05-11T12:11:45.037Z"
+    },
+    {
+      "id": "ORD-1778500424518",
+      "customerName": "Hemanth",
+      "customerEmail": "hemanthraj6484@gmail.com",
+      "customerPhone": "08300110089",
+      "address": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE, brand monk acemady, COIMBATORE, Tamil Nadu - 641011",
+      "items": [
+        {
+          "id": 1778307595189,
+          "name": "Fresh Tomato (Farm Fresh)",
+          "quantity": 8,
+          "price": 40
+        }
+      ],
+      "total": 451,
+      "subtotal": 320,
+      "shipping": 99,
+      "tax": 32,
+      "discount": 0,
+      "couponCode": null,
+      "paymentMethod": "cod",
+      "orderId": "ORD-1778500424515",
+      "status": "pending",
+      "paymentStatus": "pending",
+      "shippingAddress": {
+        "name": "Hemanth Raj",
+        "phone": "08300110089",
+        "addressLine1": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "addressLine2": "brand monk acemady",
+        "city": "COIMBATORE",
+        "state": "Tamil Nadu",
+        "pincode": "641011",
+        "landmark": "",
+        "type": "Home"
+      },
+      "shippingZone": {
+        "id": 1778499804795,
+        "name": "Local",
+        "description": "free shipinng",
+        "regions": "Delhi",
+        "countries": [],
+        "states": [],
+        "cities": [
+          "Mumbai"
+        ],
+        "pincodes": "641011",
+        "minOrderAmount": 1,
+        "shippingCost": 99,
+        "freeShippingAbove": 600,
+        "deliveryDays": "3-5",
+        "isActive": true,
+        "createdAt": "2026-05-11T11:43:24.795Z",
+        "updatedAt": "2026-05-11T11:43:31.248Z"
+      },
+      "createdAt": "2026-05-11T11:53:44.518Z"
+    },
+    {
+      "id": "ORD-1778499144104",
+      "customerName": "Hemanth",
+      "customerEmail": "hemanthraj6484@gmail.com",
+      "customerPhone": "08300110089",
+      "address": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE, brand monk acemady, COIMBATORE, Tamil Nadu - 641011",
+      "items": [
+        {
+          "id": 1778307595189,
+          "name": "Fresh Tomato (Farm Fresh)",
+          "quantity": 1,
+          "price": 40
+        },
+        {
+          "id": 1778314966534,
+          "name": "Brokoli",
+          "quantity": 1,
+          "price": 58
+        },
+        {
+          "id": 1778483057486,
+          "name": "iphone",
+          "quantity": 1,
+          "price": 258
+        }
+      ],
+      "total": 490.6,
+      "subtotal": 356,
+      "shipping": 99,
+      "tax": 35.6,
+      "discount": 0,
+      "couponCode": null,
+      "paymentMethod": "cod",
+      "orderId": "ORD-1778499144100",
+      "status": "pending",
+      "paymentStatus": "pending",
+      "shippingAddress": {
+        "name": "Hemanth Raj",
+        "phone": "08300110089",
+        "addressLine1": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "addressLine2": "brand monk acemady",
+        "city": "COIMBATORE",
+        "state": "Tamil Nadu",
+        "pincode": "641011",
+        "landmark": "",
+        "type": "Home"
+      },
+      "shippingZone": null,
+      "createdAt": "2026-05-11T11:32:24.104Z"
+    },
+    {
+      "id": "ORD-1778498844481",
+      "customerName": "Hemanth",
+      "customerEmail": "hemanthraj6484@gmail.com",
+      "customerPhone": "08300110089",
+      "address": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE, brand monk acemady, COIMBATOReee, 641011 - RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+      "items": [
+        {
+          "id": 1778307595189,
+          "name": "Fresh Tomato (Farm Fresh)",
+          "quantity": 3,
+          "price": 40
+        }
+      ],
+      "total": 131,
+      "subtotal": 120,
+      "shipping": 99,
+      "tax": 12,
+      "discount": 100,
+      "couponCode": "J0UDS7L8",
+      "paymentMethod": "cod",
+      "orderId": "ORD-1778498844478",
+      "status": "pending",
+      "paymentStatus": "pending",
+      "shippingAddress": {
+        "name": "Hemanth Raj",
+        "phone": "08300110089",
+        "addressLine1": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "addressLine2": "brand monk acemady",
+        "city": "COIMBATOReee",
+        "state": "641011",
+        "pincode": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "landmark": "",
+        "type": "Work"
+      },
+      "shippingZone": null,
+      "createdAt": "2026-05-11T11:27:24.481Z"
+    },
+    {
+      "id": "ORD-1778497822346",
+      "customerName": "Hemanth",
+      "customerEmail": "hemanthraj6484@gmail.com",
+      "customerPhone": "08300110089",
+      "address": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE, brand monk acemady, COIMBATOReee, 641011 - RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+      "items": [
+        {
+          "id": 1778314966534,
+          "name": "Brokoli",
+          "quantity": 11,
+          "price": 58
+        },
+        {
+          "id": 1778487390389,
+          "name": "Products",
+          "quantity": 1,
+          "price": 9999
+        }
+      ],
+      "total": 11799.7,
+      "subtotal": 10637,
+      "shipping": 99,
+      "tax": 1063.7,
+      "discount": 0,
+      "paymentMethod": "cod",
+      "orderId": "ORD-1778497822343",
+      "status": "pending",
+      "paymentStatus": "pending",
+      "shippingAddress": {
+        "name": "Hemanth Raj",
+        "phone": "08300110089",
+        "addressLine1": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "addressLine2": "brand monk acemady",
+        "city": "COIMBATOReee",
+        "state": "641011",
+        "pincode": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "landmark": "",
+        "type": "Work"
+      },
+      "shippingZone": null,
+      "createdAt": "2026-05-11T11:10:22.346Z"
+    },
+    {
+      "id": "ORD-1778495013578",
+      "customerName": "Hemanth",
+      "customerEmail": "hemanthraj6484@gmail.com",
+      "customerPhone": "08300110089",
+      "address": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE, brand monk acemady, COIMBATOReee, 641011 - RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+      "items": [
+        {
+          "id": 1778307595189,
+          "name": "Fresh Tomato (Farm Fresh)",
+          "quantity": 1,
+          "price": 40
+        },
+        {
+          "id": 1778494584031,
+          "name": "Fruits",
+          "quantity": 1,
+          "price": 999
+        }
+      ],
+      "total": 1142.9,
+      "subtotal": 1039,
+      "shipping": 0,
+      "tax": 103.9,
+      "paymentMethod": "cod",
+      "orderId": "ORD-1778495013268",
+      "status": "pending",
+      "paymentStatus": "pending",
+      "shippingAddress": {
+        "name": "Hemanth Raj",
+        "phone": "08300110089",
+        "addressLine1": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "addressLine2": "brand monk acemady",
+        "city": "COIMBATOReee",
+        "state": "641011",
+        "pincode": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "landmark": "",
+        "type": "Work"
+      },
+      "createdAt": "2026-05-11T10:23:33.578Z"
+    },
+    {
+      "id": "ORD-1778494684249",
+      "customerName": "Hemanth",
+      "customerEmail": "hemanthraj6484@gmail.com",
+      "customerPhone": "08300110089",
+      "address": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE, brand monk acemady, COIMBATOReee, 641011 - RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+      "items": [
+        {
+          "id": 1778307595189,
+          "name": "Fresh Tomato (Farm Fresh)",
+          "quantity": 2,
+          "price": 40
+        }
+      ],
+      "total": 187,
+      "subtotal": 80,
+      "shipping": 99,
+      "tax": 8,
+      "paymentMethod": "cod",
+      "orderId": "ORD-1778494684245",
+      "status": "shipped",
+      "paymentStatus": "pending",
+      "shippingAddress": {
+        "name": "Hemanth Raj",
+        "phone": "08300110089",
+        "addressLine1": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "addressLine2": "brand monk acemady",
+        "city": "COIMBATOReee",
+        "state": "641011",
+        "pincode": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "landmark": "",
+        "type": "Work"
+      },
+      "createdAt": "2026-05-11T10:18:04.249Z"
+    },
+    {
+      "id": "ORD-1778494477602",
+      "customerName": "Hemanth",
+      "customerEmail": "hemanthraj6484@gmail.com",
+      "customerPhone": "08300110089",
+      "address": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE, brand monk acemady, COIMBATOReee, 641011 - RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+      "items": [
+        {
+          "id": 1778307595189,
+          "name": "Fresh Tomato (Farm Fresh)",
+          "quantity": 1,
+          "price": 40
+        }
+      ],
+      "total": 143,
+      "subtotal": 40,
+      "shipping": 99,
+      "tax": 4,
+      "paymentMethod": "cod",
+      "orderId": "ORD-1778494477597",
+      "status": "pending",
+      "paymentStatus": "pending",
+      "shippingAddress": {
+        "name": "Hemanth Raj",
+        "phone": "08300110089",
+        "addressLine1": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "addressLine2": "brand monk acemady",
+        "city": "COIMBATOReee",
+        "state": "641011",
+        "pincode": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "landmark": "",
+        "type": "Work"
+      },
+      "createdAt": "2026-05-11T10:14:37.602Z"
+    },
+    {
+      "id": "ORD-1778482099806",
+      "customerName": "Hemanth",
+      "customerEmail": "hemanthraj6484@gmail.com",
+      "customerPhone": "08300110089",
+      "address": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE, brand monk acemady, COIMBATORE, 641011 - RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+      "items": [
+        {
+          "id": 1778314966534,
+          "name": "Brokoli",
+          "quantity": 2,
+          "price": 58
+        },
+        {
+          "id": 1778480978853,
+          "name": "database",
+          "quantity": 1,
+          "price": 522
+        },
+        {
+          "id": 1778305834377,
+          "name": "iphone",
+          "quantity": 2,
+          "price": "999"
+        },
+        {
+          "id": 1778307595189,
+          "name": "Fresh Tomato (Farm Fresh)",
+          "quantity": 1,
+          "price": 40
+        }
+      ],
+      "total": 2943.6,
+      "subtotal": 2676,
+      "shipping": 0,
+      "tax": 267.6,
+      "paymentMethod": "cod",
+      "orderId": "ORD-1778482099802",
+      "status": "pending",
+      "paymentStatus": "pending",
+      "shippingAddress": {
+        "name": "Hemanth Raj",
+        "phone": "08300110089",
+        "addressLine1": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "addressLine2": "brand monk acemady",
+        "city": "COIMBATORE",
+        "state": "641011",
+        "pincode": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "landmark": "",
+        "type": "Work"
+      },
+      "createdAt": "2026-05-11T06:48:19.806Z"
+    },
+    {
+      "id": "ORD-1778481182174",
+      "customerName": "Hemanth",
+      "customerEmail": "hemanthraj6484@gmail.com",
+      "customerPhone": "08300110089",
+      "address": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE, brand monk acemady, COIMBATORE, 641011 - RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+      "items": [
+        {
+          "id": 1778305834377,
+          "name": "iphone",
+          "quantity": 1,
+          "price": "999"
+        },
+        {
+          "id": 1778314966534,
+          "name": "Brokoli",
+          "quantity": 1,
+          "price": 58
+        }
+      ],
+      "total": 1162.7,
+      "subtotal": 1057,
+      "shipping": 0,
+      "tax": 105.7,
+      "paymentMethod": "cod",
+      "orderId": "ORD-1778481181860",
+      "status": "pending",
+      "paymentStatus": "pending",
+      "shippingAddress": {
+        "name": "Hemanth Raj",
+        "phone": "08300110089",
+        "addressLine1": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "addressLine2": "brand monk acemady",
+        "city": "COIMBATORE",
+        "state": "641011",
+        "pincode": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "landmark": "",
+        "type": "Work"
+      },
+      "createdAt": "2026-05-11T06:33:02.174Z"
+    },
+    {
+      "id": "ORD-1778479386378",
+      "customerName": "Hemanth",
+      "customerEmail": "hemanthraj6484@gmail.com",
+      "customerPhone": "08300110089",
+      "address": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE, brand monk acemady, COIMBATORE, 641011 - RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+      "items": [
+        {
+          "id": 1778305834377,
+          "name": "iphone",
+          "quantity": 5,
+          "price": "999"
+        },
+        {
+          "id": 1778307595189,
+          "name": "Fresh Tomato (Farm Fresh)",
+          "quantity": 3,
+          "price": 40
+        },
+        {
+          "id": 1778314966534,
+          "name": "Brokoli",
+          "quantity": 2,
+          "price": 58
+        }
+      ],
+      "total": 5754.1,
+      "subtotal": 5231,
+      "shipping": 0,
+      "tax": 523.1,
+      "paymentMethod": "cod",
+      "orderId": "ORD-1778479386375",
+      "status": "shipped",
+      "paymentStatus": "pending",
+      "shippingAddress": {
+        "name": "Hemanth Raj",
+        "phone": "08300110089",
+        "addressLine1": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "addressLine2": "brand monk acemady",
+        "city": "COIMBATORE",
+        "state": "641011",
+        "pincode": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+        "landmark": "",
+        "type": "Work"
+      },
+      "createdAt": "2026-05-11T06:03:06.378Z",
+      "updatedAt": "2026-05-11T06:03:58.112Z"
+    },
+    {
+      "id": "ORD-1778315016836",
+      "orderId": "ORD-1778315016836",
+      "customerName": "Hemanth",
+      "customerEmail": "hemanthraj6484@gmail.com",
+      "customerPhone": "08300110089",
+      "address": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE, brand monk acemady, COIMBATORE, 641011 - RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+      "items": [
+        {
+          "id": 1778314966534,
+          "name": "Brokoli",
+          "quantity": 5,
+          "price": 58
+        }
+      ],
+      "total": 418,
+      "subtotal": 290,
+      "shipping": 99,
+      "tax": 29,
+      "paymentMethod": "cod",
+      "status": "shipped",
+      "paymentStatus": "pending",
+      "createdAt": "2026-05-09T08:23:36.836Z",
+      "updatedAt": "2026-05-09T08:24:41.411Z"
+    },
+    {
+      "id": "ORD-1778314399398",
+      "orderId": "ORD-1778314399398",
+      "customerName": "Hemanth",
+      "customerEmail": "hemanthraj6484@gmail.com",
+      "customerPhone": "08300110089",
+      "address": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE, brand monk acemady, COIMBATORE, 641011 - RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+      "items": [
+        {
+          "id": 1778305834377,
+          "name": "iphone",
+          "quantity": 3,
+          "price": 999
+        },
+        {
+          "id": 1778307595189,
+          "name": "Fresh Tomato (Farm Fresh)",
+          "quantity": 3,
+          "price": 40
+        }
+      ],
+      "total": 3428.7,
+      "subtotal": 3117,
+      "shipping": 0,
+      "tax": 311.70000000000005,
+      "paymentMethod": "cod",
+      "status": "shipped",
+      "paymentStatus": "pending",
+      "createdAt": "2026-05-09T08:13:19.398Z",
+      "updatedAt": "2026-05-09T08:16:22.642Z"
+    },
+    {
+      "id": "ORD-1778314152950",
+      "orderId": "ORD-1778314152950",
+      "customerName": "Hemanth",
+      "customerEmail": "hemanthraj6484@gmail.com",
+      "customerPhone": "08300110089",
+      "address": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE, brand monk acemady, COIMBATORE, 641011 - RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+      "items": [
+        {
+          "id": 1778305834377,
+          "name": "iphone",
+          "quantity": 2,
+          "price": 999
+        },
+        {
+          "id": 1778307595189,
+          "name": "Fresh Tomato (Farm Fresh)",
+          "quantity": 2,
+          "price": 40
+        }
+      ],
+      "total": 2285.8,
+      "subtotal": 2078,
+      "shipping": 0,
+      "tax": 207.8,
+      "paymentMethod": "cod",
+      "status": "shipped",
+      "paymentStatus": "pending",
+      "createdAt": "2026-05-09T08:09:12.950Z",
+      "updatedAt": "2026-05-09T08:09:29.516Z"
+    },
+    {
+      "id": "ORD-1778313903925",
+      "orderId": "ORD-1778313903925",
+      "customerName": "Hemanth",
+      "customerEmail": "hemanthraj6484@gmail.com",
+      "customerPhone": "08300110089",
+      "address": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE, brand monk acemady, COIMBATORE, 641011 - RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+      "items": [
+        {
+          "id": 1778305834377,
+          "name": "iphone",
+          "quantity": 3,
+          "price": 999
+        }
+      ],
+      "total": 3296.7,
+      "subtotal": 2997,
+      "shipping": 0,
+      "tax": 299.7,
+      "paymentMethod": "cod",
+      "status": "shipped",
+      "paymentStatus": "pending",
+      "createdAt": "2026-05-09T08:05:03.925Z",
+      "updatedAt": "2026-05-09T08:09:42.660Z"
+    },
+    {
+      "id": "ORD-1778313845596",
+      "orderId": "ORD-1778313845596",
+      "customerName": "Hemanth",
+      "customerEmail": "hemanthraj6484@gmail.com",
+      "customerPhone": "08300110089",
+      "address": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE, brand monk acemady, COIMBATORE, 641011 - RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+      "items": [
+        {
+          "id": 1778307595189,
+          "name": "Fresh Tomato (Farm Fresh)",
+          "quantity": 1,
+          "price": 40
+        },
+        {
+          "id": 1778305834377,
+          "name": "iphone",
+          "quantity": 1,
+          "price": 999
+        }
+      ],
+      "total": 1142.9,
+      "subtotal": 1039,
+      "shipping": 0,
+      "tax": 103.9,
+      "paymentMethod": "cod",
+      "status": "shipped",
+      "paymentStatus": "pending",
+      "createdAt": "2026-05-09T08:04:05.596Z",
+      "updatedAt": "2026-05-09T08:09:47.395Z"
+    }
+  ],
+  "customers": [
+    {
+      "id": "CUST-1778313845596",
+      "name": "Hemanth",
+      "email": "hemanthraj6484@gmail.com",
+      "phone": "08300110089",
+      "address": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE, brand monk acemady, COIMBATORE, 641011 - RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+      "totalOrders": 9,
+      "totalSpent": 15947.9,
+      "lastOrder": "2026-05-13T04:57:39.015Z",
+      "joinedDate": "2026-05-09T08:04:05.596Z",
+      "status": "active",
+      "updatedAt": "2026-05-11T07:01:20.333Z",
+      "city": "COIMBATORE",
+      "state": "Tamil Nadu",
+      "pincode": "641011"
+    }
+  ],
+  "wishlist": [],
+  "coupons": [
+    {
+      "id": 1778495992064,
+      "code": "J0UDS7L8",
+      "discountType": "fixed",
+      "discountValue": 100,
+      "minOrder": 1,
+      "maxDiscount": 10,
+      "validFrom": "2026-05-11",
+      "validTo": "2026-05-16",
+      "usageLimit": 100,
+      "status": "active",
+      "description": "50% OFF",
+      "usedCount": 2,
+      "createdAt": "2026-05-11T10:39:52.064Z",
+      "updatedAt": "2026-05-11T10:43:44.225Z"
+    }
+  ],
+  "shippingZones": [
+    {
+      "id": 1,
+      "name": "Local Zone",
+      "description": "Fast delivery in local area",
+      "pincodes": "400001-400100",
+      "regions": "",
+      "shippingCost": 49,
+      "freeShippingAbove": 500,
+      "deliveryDays": "1-2",
+      "isActive": true,
+      "createdAt": "2026-05-11T11:03:08.963Z"
+    },
+    {
+      "id": 2,
+      "name": "Metro Cities",
+      "description": "Delivery to major metro cities",
+      "pincodes": "400001-400999,110001-110099,560001-560100,600001-600100,700001-700150",
+      "regions": "mumbai,delhi,bangalore,chennai,kolkata",
+      "shippingCost": 99,
+      "freeShippingAbove": 1000,
+      "deliveryDays": "3-5",
+      "isActive": true,
+      "createdAt": "2026-05-11T11:03:08.964Z"
+    },
+    {
+      "id": 1778499804795,
+      "name": "Local",
+      "description": "free shipinng",
+      "regions": "Delhi",
+      "countries": [],
+      "states": [],
+      "cities": [
+        "Mumbai"
+      ],
+      "pincodes": "641011",
+      "minOrderAmount": 1,
+      "shippingCost": 99,
+      "freeShippingAbove": 600,
+      "deliveryDays": "3-5",
+      "isActive": true,
+      "createdAt": "2026-05-11T11:43:24.795Z",
+      "updatedAt": "2026-05-11T11:43:31.248Z"
+    }
+  ],
+  "taxRates": [
+    {
+      "id": 1,
+      "name": "Standard GST",
+      "rate": 18,
+      "category": "all",
+      "isActive": true,
+      "description": "Standard GST rate for all products",
+      "createdAt": "2026-05-11T11:58:54.561Z"
+    },
+    {
+      "id": 2,
+      "name": "Essential Items",
+      "rate": 5,
+      "category": "groceries",
+      "isActive": true,
+      "description": "Lower tax rate for essential items",
+      "createdAt": "2026-05-11T11:58:54.561Z"
+    },
+    {
+      "id": 3,
+      "name": "Luxury Items",
+      "rate": 28,
+      "category": "luxury",
+      "isActive": true,
+      "description": "Higher tax rate for luxury items",
+      "createdAt": "2026-05-11T11:58:54.561Z"
+    }
+  ],
+  "reviews": [],
+  "storeSettings": {
+    "storeName": "Hemanth Raj",
+    "storeEmail": "hemanthraj6484@gmail.com",
+    "storePhone": "08300110089",
+    "storeAddress": "RS PURAM DIWAND BAKATHUR ROAD COIMBATORE",
+    "storeCity": "COIMBATORE",
+    "storeState": "Tamil Nadu",
+    "storePincode": "641011",
+    "storeWebsite": "",
+    "storeDescription": "ok",
+    "storeCurrency": "INR",
+    "taxRate": 10,
+    "shippingDefault": 99,
+    "freeShippingThreshold": 1000,
+    "logoUrl": "http://localhost:5000/uploads/branding/logo.jpg",
+    "updatedAt": "2026-05-13T05:07:10.779Z"
+  }
+}

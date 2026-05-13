@@ -1,0 +1,18 @@
+{
+  "storeSettings": {
+    "storeName": "My E-commerce Store",
+    "storeEmail": "contact@mystore.com",
+    "storePhone": "+91 9876543210",
+    "storeAddress": "123 Main Street",
+    "storeCity": "Mumbai",
+    "storeState": "Maharashtra",
+    "storePincode": "400001",
+    "storeWebsite": "www.mystore.com",
+    "storeDescription": "Best quality products at affordable prices.",
+    "storeCurrency": "INR",
+    "taxRate": 10,
+    "shippingDefault": 99,
+    "freeShippingThreshold": 1000,
+    "logoUrl": null
+  }
+}
