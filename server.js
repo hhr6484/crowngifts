@@ -50,48 +50,60 @@ const reviewsDir = path.join(uploadsDir, 'reviews');
 app.use('/uploads', express.static(uploadsDir));
 
 // ============ CLOUDINARY STORAGE CONFIGURATIONS ============
+// ============ UPDATED CLOUDINARY STORAGE CONFIGURATIONS ============
+
+// Product Storage - Cloudinary
 const productStorage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
     folder: 'products',
     allowed_formats: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
-    transformation: [{ width: 500, height: 500, crop: 'limit' }]
+    transformation: [{ width: 500, height: 500, crop: 'limit' }],
+    upload_preset: 'ecommerce_preset'  // ← ADD THIS
   }
 });
 
+// Category Storage - Cloudinary
 const categoryStorage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
     folder: 'categories',
     allowed_formats: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
-    transformation: [{ width: 200, height: 200, crop: 'limit' }]
+    transformation: [{ width: 200, height: 200, crop: 'limit' }],
+    upload_preset: 'ecommerce_preset'  // ← ADD THIS
   }
 });
 
+// Banner Storage - Cloudinary
 const bannerStorage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
     folder: 'banners',
     allowed_formats: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
-    transformation: [{ width: 1600, height: 700, crop: 'limit' }]
+    transformation: [{ width: 1600, height: 700, crop: 'limit' }],
+    upload_preset: 'ecommerce_preset'  // ← ADD THIS
   }
 });
 
+// Logo Storage - Cloudinary
 const logoStorage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
     folder: 'branding',
     allowed_formats: ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg'],
-    transformation: [{ width: 200, height: 200, crop: 'limit' }]
+    transformation: [{ width: 200, height: 200, crop: 'limit' }],
+    upload_preset: 'ecommerce_preset'  // ← ADD THIS
   }
 });
 
+// Review Storage - Cloudinary
 const reviewStorage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
     folder: 'reviews',
     allowed_formats: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
-    transformation: [{ width: 100, height: 100, crop: 'limit' }]
+    transformation: [{ width: 100, height: 100, crop: 'limit' }],
+    upload_preset: 'ecommerce_preset'  // ← ADD THIS
   }
 });
 
