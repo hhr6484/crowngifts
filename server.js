@@ -5,6 +5,8 @@ import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
+import { v2 as cloudinary } from 'cloudinary';
+import { CloudinaryStorage } from 'multer-storage-cloudinary';
 
 dotenv.config();
 
@@ -13,6 +15,13 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+
+// ============ CLOUDINARY CONFIGURATION ============
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET
+});
 
 // ============ CORS ============
 app.use(cors({
@@ -26,7 +35,7 @@ app.options('*', cors());
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
-// ============ UPLOAD DIRECTORIES ============
+// ============ UPLOAD DIRECTORIES (for local backup) ============
 const uploadsDir = path.join(__dirname, 'uploads');
 const productsDir = path.join(uploadsDir, 'products');
 const categoriesDir = path.join(uploadsDir, 'categories');
@@ -40,47 +49,59 @@ const reviewsDir = path.join(uploadsDir, 'reviews');
 
 app.use('/uploads', express.static(uploadsDir));
 
-// ============ MULTER CONFIGURATIONS ============
-const productStorage = multer.diskStorage({
-  destination: (req, file, cb) => cb(null, productsDir),
-  filename: (req, file, cb) => {
-    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
-    cb(null, 'product-' + uniqueSuffix + path.extname(file.originalname));
+// ============ CLOUDINARY STORAGE CONFIGURATIONS ============
+
+// Product Storage - Cloudinary
+const productStorage = new CloudinaryStorage({
+  cloudinary: cloudinary,
+  params: {
+    folder: 'products',
+    allowed_formats: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
+    transformation: [{ width: 500, height: 500, crop: 'limit' }]
   }
 });
 
-const categoryStorage = multer.diskStorage({
-  destination: (req, file, cb) => cb(null, categoriesDir),
-  filename: (req, file, cb) => {
-    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
-    cb(null, 'category-' + uniqueSuffix + path.extname(file.originalname));
+// Category Storage - Cloudinary
+const categoryStorage = new CloudinaryStorage({
+  cloudinary: cloudinary,
+  params: {
+    folder: 'categories',
+    allowed_formats: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
+    transformation: [{ width: 200, height: 200, crop: 'limit' }]
   }
 });
 
-const bannerStorage = multer.diskStorage({
-  destination: (req, file, cb) => cb(null, bannersDir),
-  filename: (req, file, cb) => {
-    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
-    cb(null, 'banner-' + uniqueSuffix + path.extname(file.originalname));
+// Banner Storage - Cloudinary
+const bannerStorage = new CloudinaryStorage({
+  cloudinary: cloudinary,
+  params: {
+    folder: 'banners',
+    allowed_formats: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
+    transformation: [{ width: 1600, height: 700, crop: 'limit' }]
   }
 });
 
-const logoStorage = multer.diskStorage({
-  destination: (req, file, cb) => cb(null, brandingDir),
-  filename: (req, file, cb) => {
-    const ext = path.extname(file.originalname);
-    cb(null, 'logo' + ext);
+// Logo Storage - Cloudinary
+const logoStorage = new CloudinaryStorage({
+  cloudinary: cloudinary,
+  params: {
+    folder: 'branding',
+    allowed_formats: ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg'],
+    transformation: [{ width: 200, height: 200, crop: 'limit' }]
   }
 });
 
-const reviewStorage = multer.diskStorage({
-  destination: (req, file, cb) => cb(null, reviewsDir),
-  filename: (req, file, cb) => {
-    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
-    cb(null, 'review-' + uniqueSuffix + path.extname(file.originalname));
+// Review Storage - Cloudinary
+const reviewStorage = new CloudinaryStorage({
+  cloudinary: cloudinary,
+  params: {
+    folder: 'reviews',
+    allowed_formats: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
+    transformation: [{ width: 100, height: 100, crop: 'limit' }]
   }
 });
 
+// Multer upload instances
 const productUpload = multer({ 
   storage: productStorage, 
   limits: { fileSize: 10 * 1024 * 1024 },
@@ -147,7 +168,7 @@ const reviewUpload = multer({
 });
 
 // ============ DATA STORE ============
-const DB_FILE = path.join('/tmp', 'database.json');
+const DB_FILE = path.join(__dirname, 'database.json');
 
 let products = [];
 let categories = [];
@@ -308,6 +329,9 @@ const DEFAULT_COUPONS = [
   }
 ];
 
+// API Domain for image URLs
+const API_DOMAIN = process.env.API_DOMAIN || 'https://crowngifts12.onrender.com';
+
 // Load data from file
 function loadData() {
   try {
@@ -350,11 +374,14 @@ function saveData() {
 
 loadData();
 
+// ============ IMAGE URL FUNCTION - Returns Cloudinary URLs ============
 function getImageUrl(imgPath) {
   if (!imgPath) return null;
+  // Cloudinary returns full HTTPS URLs, just return them
   if (imgPath.startsWith('http')) return imgPath;
-  if (imgPath.startsWith('/uploads')) return `http://localhost:${PORT}${imgPath}`;
-  return `http://localhost:${PORT}/${imgPath}`;
+  // Fallback for any local paths (should not happen with Cloudinary)
+  if (imgPath.startsWith('/uploads')) return `${API_DOMAIN}${imgPath}`;
+  return `${API_DOMAIN}/${imgPath}`;
 }
 
 // ============ TAX CALCULATION FUNCTION ============
@@ -505,6 +532,7 @@ app.get('/api/client/banners', (req, res) => {
     .map(b => ({ ...b, image: getImageUrl(b.image) }));
   res.json(activeBanners);
 });
+
 // Get single product
 app.get('/api/client/products/:id', (req, res) => {
   const product = products.find(p => p.id == req.params.id);
@@ -538,8 +566,8 @@ app.get('/api/client/products/:productId/reviews', (req, res) => {
 // Add review
 app.post('/api/client/products/:productId/reviews', reviewUpload.single('image'), (req, res) => {
   try {
-    let imagePath = '';
-    if (req.file) imagePath = `/uploads/reviews/${req.file.filename}`;
+    let imageUrl = '';
+    if (req.file) imageUrl = req.file.path; // Cloudinary URL
     
     const newReview = {
       id: Date.now(),
@@ -548,12 +576,12 @@ app.post('/api/client/products/:productId/reviews', reviewUpload.single('image')
       title: req.body.title || '',
       comment: req.body.comment,
       rating: parseInt(req.body.rating) || 5,
-      image: imagePath,
+      image: imageUrl,
       createdAt: new Date().toISOString()
     };
     reviews.unshift(newReview);
     saveData();
-    res.status(201).json({ ...newReview, image: getImageUrl(imagePath) });
+    res.status(201).json({ ...newReview, image: getImageUrl(imageUrl) });
   } catch (error) {
     console.error('Error adding review:', error);
     res.status(500).json({ error: error.message });
@@ -816,7 +844,7 @@ app.get('/api/admin/products', (req, res) => {
 
 app.post('/api/admin/products', productUpload.array('images', 10), (req, res) => {
   try {
-    const imageUrls = req.files ? req.files.map(f => `/uploads/products/${f.filename}`) : [];
+    const imageUrls = req.files ? req.files.map(f => f.path) : []; // Cloudinary URLs
     const newProduct = {
       id: Date.now(),
       name: req.body.name,
@@ -840,6 +868,7 @@ app.post('/api/admin/products', productUpload.array('images', 10), (req, res) =>
     saveData();
     res.status(201).json(newProduct);
   } catch (error) {
+    console.error('Error creating product:', error);
     res.status(500).json({ error: error.message });
   }
 });
@@ -852,7 +881,7 @@ app.put('/api/admin/products/:id', productUpload.array('images', 10), (req, res)
     
     let imageUrls = products[index].images || [];
     if (req.files && req.files.length > 0) {
-      const newImages = req.files.map(f => `/uploads/products/${f.filename}`);
+      const newImages = req.files.map(f => f.path);
       imageUrls = [...imageUrls, ...newImages];
     }
     
@@ -878,6 +907,7 @@ app.put('/api/admin/products/:id', productUpload.array('images', 10), (req, res)
     saveData();
     res.json(products[index]);
   } catch (error) {
+    console.error('Error updating product:', error);
     res.status(500).json({ error: error.message });
   }
 });
@@ -903,21 +933,23 @@ app.get('/api/admin/categories', (req, res) => {
 
 app.post('/api/admin/categories', categoryUpload.single('image'), (req, res) => {
   try {
-    let imagePath = '';
-    if (req.file) imagePath = `/uploads/categories/${req.file.filename}`;
+    let imageUrl = '';
+    if (req.file) imageUrl = req.file.path; // Cloudinary URL
+    
     const newCategory = {
       id: Date.now(),
       name: req.body.name,
       description: req.body.description || '',
       status: req.body.status || 'active',
       order: parseInt(req.body.order) || categories.length + 1,
-      image: imagePath,
+      image: imageUrl,
       createdAt: new Date().toISOString()
     };
     categories.push(newCategory);
     saveData();
-    res.status(201).json(newCategory);
+    res.status(201).json({ ...newCategory, image: getImageUrl(imageUrl) });
   } catch (error) {
+    console.error('Error creating category:', error);
     res.status(500).json({ error: error.message });
   }
 });
@@ -927,12 +959,20 @@ app.put('/api/admin/categories/:id', categoryUpload.single('image'), (req, res) 
     const id = parseInt(req.params.id);
     const index = categories.findIndex(c => c.id === id);
     if (index === -1) return res.status(404).json({ error: 'Category not found' });
-    let imagePath = categories[index].image;
-    if (req.file) imagePath = `/uploads/categories/${req.file.filename}`;
-    categories[index] = { ...categories[index], ...req.body, image: imagePath, updatedAt: new Date().toISOString() };
+    
+    let imageUrl = categories[index].image;
+    if (req.file) imageUrl = req.file.path; // Cloudinary URL
+    
+    categories[index] = { 
+      ...categories[index], 
+      ...req.body, 
+      image: imageUrl, 
+      updatedAt: new Date().toISOString() 
+    };
     saveData();
-    res.json(categories[index]);
+    res.json({ ...categories[index], image: getImageUrl(imageUrl) });
   } catch (error) {
+    console.error('Error updating category:', error);
     res.status(500).json({ error: error.message });
   }
 });
@@ -971,8 +1011,9 @@ app.get('/api/admin/banners', (req, res) => {
 
 app.post('/api/admin/banners', bannerUpload.single('image'), (req, res) => {
   try {
-    let imagePath = '';
-    if (req.file) imagePath = `/uploads/banners/${req.file.filename}`;
+    let imageUrl = '';
+    if (req.file) imageUrl = req.file.path; // Cloudinary URL
+    
     const newBanner = {
       id: Date.now(),
       title: req.body.title,
@@ -983,13 +1024,14 @@ app.post('/api/admin/banners', bannerUpload.single('image'), (req, res) => {
       badge: req.body.badge || '',
       active: req.body.active === 'true',
       order: parseInt(req.body.order) || banners.length + 1,
-      image: imagePath,
+      image: imageUrl,
       createdAt: new Date().toISOString()
     };
     banners.push(newBanner);
     saveData();
-    res.status(201).json(newBanner);
+    res.status(201).json({ ...newBanner, image: getImageUrl(imageUrl) });
   } catch (error) {
+    console.error('Error creating banner:', error);
     res.status(500).json({ error: error.message });
   }
 });
@@ -999,12 +1041,20 @@ app.put('/api/admin/banners/:id', bannerUpload.single('image'), (req, res) => {
     const id = parseInt(req.params.id);
     const index = banners.findIndex(b => b.id === id);
     if (index === -1) return res.status(404).json({ error: 'Banner not found' });
-    let imagePath = banners[index].image;
-    if (req.file) imagePath = `/uploads/banners/${req.file.filename}`;
-    banners[index] = { ...banners[index], ...req.body, image: imagePath, updatedAt: new Date().toISOString() };
+    
+    let imageUrl = banners[index].image;
+    if (req.file) imageUrl = req.file.path; // Cloudinary URL
+    
+    banners[index] = { 
+      ...banners[index], 
+      ...req.body, 
+      image: imageUrl, 
+      updatedAt: new Date().toISOString() 
+    };
     saveData();
-    res.json(banners[index]);
+    res.json({ ...banners[index], image: getImageUrl(imageUrl) });
   } catch (error) {
+    console.error('Error updating banner:', error);
     res.status(500).json({ error: error.message });
   }
 });
@@ -1192,10 +1242,10 @@ app.post('/api/admin/store-settings', (req, res) => {
 app.post('/api/admin/upload-logo', logoUpload.single('logo'), (req, res) => {
   try {
     if (!req.file) return res.status(400).json({ error: 'No file uploaded' });
-    const logoPath = `/uploads/branding/${req.file.filename}`;
-    storeSettings.logoUrl = logoPath;
+    const logoUrl = req.file.path; // Cloudinary URL
+    storeSettings.logoUrl = logoUrl;
     saveData();
-    res.json({ logoUrl: getImageUrl(logoPath), message: 'Logo uploaded successfully' });
+    res.json({ logoUrl: getImageUrl(logoUrl), message: 'Logo uploaded successfully' });
   } catch (error) {
     console.error('Error uploading logo:', error);
     res.status(500).json({ error: error.message });
@@ -1237,10 +1287,12 @@ app.get('/api/health', (req, res) => {
 
 // ============ START SERVER ============
 app.listen(PORT, '0.0.0.0', () => {
-  console.log(`\n🚀 Server running on http://localhost:${PORT}`);
+  console.log(`\n🚀 Server running on port ${PORT}`);
   console.log(`📦 Products: ${products.length}`);
   console.log(`🚚 Shipping Zones: ${shippingZones.length}`);
   console.log(`💰 Tax Rates: ${taxRates.length}`);
+  console.log(`✅ Backend live at: ${API_DOMAIN}`);
+  console.log(`✅ Cloudinary configured for image storage`);
   console.log(`✅ Ready to accept requests!\n`);
 });
 
